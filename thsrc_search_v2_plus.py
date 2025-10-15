@@ -263,6 +263,7 @@ def submit_and_wait_step2(page, max_submit_retries=5):
             log(f"提交後出現錯誤：{err or '(無內容)'}")
             if "驗證碼" in err or "錯誤" in err or "請重新輸入" in err:
                 log(f"嘗試重新解驗證碼並重送（{attempt+1} / {max_submit_retries}）")
+                human_sleep(0.6)
                 if not handle_captcha(page):
                     return False
                 continue
