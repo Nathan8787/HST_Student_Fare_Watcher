@@ -35,13 +35,13 @@ import ddddocr
 # =============================
 CONFIG = {
     "search": {
-        "origin": "台北",
-        "dest": "台中",
-        "date": "2025-10-20",   # YYYY-MM-DD
-        "time": "15:00",        # 下拉選項顯示文字
+        "origin": "新竹",
+        "dest": "台南",
+        "date": "2025-10-26",   # YYYY-MM-DD
+        "time": "08:00",        # 下拉選項顯示文字
         "adult": 0,
         "student": 1,
-        "discount_key": "學生88折",  # 命中關鍵字 (例: 學生5折 / 學生75折 / 學生88折)
+        "discount_key": "學生5折",  # 命中關鍵字 (例: 學生5折 / 學生75折 / 學生88折)
     },
     "booking": {
         "idno": "F130355710",
@@ -50,10 +50,10 @@ CONFIG = {
     },
     "watch": {
         # 每回合等待秒數區間 (含隨機抖動)
-        "interval_min": 180,
-        "interval_max": 300,
+        "interval_min": 10,
+        "interval_max": 30,
         # 到期時間 (Asia/Taipei)，到期仍未命中會寄信並結束；留空代表無期限
-        "until": "2025-10-15 23:50",
+        "until": "2025-10-17 01:50",
         # 安全網: 最多嘗試回合數 (None 代表不限制)
         "max_rounds": None,
     },
